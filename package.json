@@ -1,0 +1,21 @@
+{
+  "name":"bookhotelroom",
+  "version":"1.0.0",
+  "main":"index.js",
+  "scripts":{
+    "server":"nodemon server.js"
+  },
+  "keywords": [
+    "Hotel Booking Management"
+  ],
+  "author":"Trọng Anh",
+  "license":"ISC",
+  "description":"This is my own hotel booking Restful API",
+  "dependencies":{
+    "cors":"^2.8.5",
+    "dotenv":"^16.4.5",
+    "express":"^4.21.1",
+    "mongoose":"^8.8.0",
+    "nodemon":"^3.1.7"
+  }
+}
