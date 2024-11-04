@@ -16,10 +16,10 @@ const bookingRoomModel = mongoose.Schema({
   type:String
  },
  reservation_startDate:{
-  type:String
+  type:Date
  },
  reservation_endDate:{
-  type:String
+  type:Date
  },
  stay_date:{
   type:Number
