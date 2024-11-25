@@ -10,7 +10,7 @@ const addNewRoom = async (req, res) => {
      image:req.body.image,
      reservation_startDate:new Date(req.body.reservation_startDate),
      reservation_endDate:new Date(req.body.reservation_endDate),
-     stay_date:req.body.stay_date
+     stay_date:req.body.stay_date,
     })
     await saveRoom.save()
     res?.status(200)?.json({message:"Room added successfully"})
@@ -26,8 +26,8 @@ const getRoomList = async (req, res) => {
 // Show detail information
 const getRoomDetail = async (req, res) => {
  try{
-   let id = req.body.id
-   let showRoomDetail = await bookingRoomModel.findOne({id:id})
+   let id = req.params.id
+   let showRoomDetail = await bookingRoomModel.findById(id)
    res?.status(200).json(showRoomDetail)
  }catch(error){
    res?.status(200).json({message:error})

@@ -23,6 +23,9 @@ const bookingRoomModel = mongoose.Schema({
  },
  stay_date:{
   type:Number
+ },
+ isPaid:{
+  type:Boolean
  }
 },{
  collection:"booking_room"
