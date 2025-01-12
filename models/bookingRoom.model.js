@@ -12,9 +12,6 @@ const bookingRoomModel = mongoose.Schema({
  roomCategory:{
   type:String
  },
- image:{
-  type:String
- },
  reservation_startDate:{
   type:Date
  },

@@ -7,7 +7,6 @@ const addNewRoom = async (req, res) => {
      phoneNumber:req.body.phoneNumber,
      roomNumber:req.body.roomNumber,
      roomCategory:req.body.roomCategory,
-     image:req.body.image,
      reservation_startDate:new Date(req.body.reservation_startDate),
      reservation_endDate:new Date(req.body.reservation_endDate),
      stay_date:req.body.stay_date,
